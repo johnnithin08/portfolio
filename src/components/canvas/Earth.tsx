@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
 
@@ -33,6 +33,7 @@ export const EarthCanvas = () => {
                 />
                 <Earth />
             </Suspense>
+            <Preload all />
         </Canvas>
     )
 }

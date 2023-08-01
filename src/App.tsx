@@ -1,7 +1,6 @@
-import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, } from "./components"
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, } from "./components"
 import { StarsCanvas } from './components/canvas/StarsCanvas'
 
 
@@ -17,7 +16,6 @@ export const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

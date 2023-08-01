@@ -1,4 +1,4 @@
-import { useState, useRef } from "react"
+import { useState, useRef, FormEvent } from "react"
 import { motion } from "framer-motion"
 import emailjs from "@emailjs/browser"
 
@@ -8,16 +8,21 @@ import { SectionWrapper } from "../hoc"
 import { slideIn } from "../utils/motion"
 
 export const ContactComponent = () => {
-    const formRef = useRef()
+    const formRef = useRef<HTMLFormElement>(null)
     const [form, setForm] = useState({ name: "", email: "", message: "" })
     const [loading, setLoading] = useState(false)
 
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target
         setForm({ ...form, [name]: value })
     }
 
-    const handleSubmit = (e) => {
+    const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        const { name, value } = e.target
+        setForm({ ...form, [name]: value })
+    }
+
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true);
         emailjs.send("service_z1nsjtr", "template_23x82lc",
@@ -33,7 +38,7 @@ export const ContactComponent = () => {
                 setLoading(false);
                 alert("Thank you. I will get back to you as soon as possible")
                 setForm({ name: "", email: "", message: "" })
-            }, (error) => {
+            }, (_error) => {
                 setLoading(false);
                 alert("Something went wrong")
             })
@@ -66,7 +71,7 @@ export const ContactComponent = () => {
                     <label className="flex flex-col">
                         <span className="text-white font-medium mb-4">Your Message</span>
                         <textarea
-                            rows={7} name="message" value={form.message} onChange={handleChange} placeholder="What's your message?"
+                            rows={7} name="message" value={form.message} onChange={handleChangeTextArea} placeholder="What's your message?"
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium" />
                     </label>
 
@@ -82,5 +87,5 @@ export const ContactComponent = () => {
         </div>
     )
 }
-
+{/* @ts-ignore */ }
 export const Contact = SectionWrapper(ContactComponent, "contact")
