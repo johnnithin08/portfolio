@@ -6,6 +6,7 @@ import { github } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
+import { useNavigate } from "react-router-dom"
 
 interface ProjectCardProps {
   index: number;
@@ -34,23 +35,23 @@ const WorksComponent = () => {
     source_code_link,
     live_link,
   }: ProjectCardProps) => {
+    const navigate = useNavigate()
 
     const handleClick = () => {
-      if (live_link !== undefined) {
-        window.open(live_link, "_blank")
-      }
+      navigate(`/${index}`)
     }
     return (
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} whileInView={"animate"}>
+      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} whileInView={"animate"} onClick={handleClick}>
         <Tilt
           options={{
             max: 45,
             scale: 1,
             speed: 450,
+            axis: "x"
           }}
-          className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+          className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer'
         >
-          <div className='relative w-full h-[230px]' onClick={handleClick}>
+          <div className='relative w-full h-[230px]' >
             <img
               src={image}
               alt='project_image'
@@ -73,13 +74,13 @@ const WorksComponent = () => {
 
           <div className='mt-5'>
             <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-            <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+            <p className='mt-2 text-secondary text-[14px] line-clamp-3'>{description}</p>
           </div>
 
           <div className='mt-4 flex flex-wrap gap-2'>
             {tags.map((tag) => (
               <p
-                key={`${name}-${tag.name}`}
+                key={`${name}-${tag.name.toLowerCase()}`}
                 className={`text-[14px] ${tag.color}`}
               >
                 #{tag.name}
