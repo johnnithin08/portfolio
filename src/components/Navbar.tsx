@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 import { styles } from "../styles"
 import { navLinks } from "../constants"
-import { menu, close } from "../assets"
+import { menu, close, linkedin, github } from "../assets"
 
 export const Navbar = () => {
     const [active, setActive] = useState("")
@@ -31,18 +31,29 @@ export const Navbar = () => {
                 }`}
         >
             <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-                <Link
-                    to='/'
-                    className='flex items-center gap-2'
-                    onClick={() => {
-                        setActive("");
-                        window.scrollTo(0, 0);
-                    }}
-                >
-                    <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-                        Nithin
-                    </p>
-                </Link>
+                <div className="flex flex-row justify-center items-center">
+                    <div className="p-1 rounded-full bg-white-100">
+                        <div
+                            onClick={() => window.open("https://github.com/johnnithin08", "_blank")}
+                            className='black-gradient bg-white w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'
+                        >
+                            <img
+                                src={github}
+                                alt='source code'
+                                className='w-10 h-10 object-contain'
+                            />
+                        </div>
+                    </div>
+                    <Link
+                        to=''
+                        className='flex items-center gap-10 ml-5'
+                        onClick={() => {
+                            window.open("https://www.linkedin.com/in/nithin-john-65a5a0184/", "_blank")
+                        }}
+                    >
+                        <img src={linkedin} alt="linkedin" className='h-16 w-16 object-contain' />
+                    </Link>
+                </div>
 
                 <ul className='list-none hidden sm:flex flex-row gap-10'>
                     {navLinks.map((nav) => (

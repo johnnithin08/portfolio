@@ -121,13 +121,7 @@ const experiences = [
             "Coordinated the development of a React web application for the investment bank's administrative operations, simplifying manual tasks by 30-40% and ensuring access privileges for different departments.",
             "Created customized UI components, accounting for 70% of the total components, to deliver unique and visually appealing user experiences.",
             "Optimized data management by utilizing the Redux state management library, resulting in a 40% reduction in application loading time and an enhanced user experience.",
-            "Implemented Test-Driven Development (TDD) methodology and leveraged the React Testing Library, leading to a significant 50% reduction in bugs and an impressive 20% increase in code coverage.",
             "Demonstrated proficiency with AWS cloud services, including S3, Lambda, EC2, and Route 53, enabling efficient resource utilization and seamless scalability.",
-            "Developed and consumed GraphQL and REST APIs, ensuring seamless integration of data between frontend and backend systems for enhanced performance and data flow.",
-            "Facilitated effective communication among teams, reducing miscommunication and improving clarity to accelerate project progress.",
-            "Managed and resolved codebase issues promptly, ensuring a stable and efficient development environment.",
-            "Conducted interviews and provided mentorship to colleagues, enhancing overall team performance and fostering professional growth.",
-            "Implemented Git flow for development tracking and introduced peer code review, resulting in a 50% decrease in code conflicts.",
             "Played a crucial role in client and business user discussions, offering valuable insights and contributing to the design and timely delivery of optimal solutions that align with business rules and requirements."
         ],
     },
@@ -160,14 +154,24 @@ const projects = [
     {
         name: "Responsive Web",
         description:
-            "Responsive landing page for a bank application making use of React and Tailwind.",
+            `The Responsive Landing Page project is a web application developed using React and Tailwind CSS. The primary objective of this project is to create an attractive and user-friendly landing page that adapts seamlessly to various screen sizes, including desktops, tablets, and mobile devices. This project serves as a practical exercise for learning and mastering the fundamentals of React and Tailwind CSS.
+        
+            What I learned from the project:
+
+            Understanding React: Building a responsive landing page using React helped me to grasp React's component-based architecture, state management, and rendering capabilities.
+            
+            Mastering Tailwind CSS: Utilizing Tailwind CSS enabled me to gain proficiency in designing responsive layouts, creating custom styles, and utilizing utility classes effectively.
+            
+            Responsive Web Design: Working on a responsive landing page provided hands-on experience in applying media queries and responsive design principles to ensure a smooth user experience across devices.
+            
+            Deployment: Deployed the landing page to a hosting platform helped me to understand the process of making the application accessible to users on the internet. `,
         tags: [
             {
-                name: "react",
+                name: "React",
                 color: "blue-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "Tailwind",
                 color: "green-text-gradient",
             }
         ],
@@ -178,10 +182,26 @@ const projects = [
     {
         name: "Advanced  Notes",
         description:
-            "Advanced notes application which enables you to create, search and filter notes making use of React concepts such as Router, useeffect, useMemo and Bootstrap. Data is stored in local storage.",
+            `The advanced notes application is a feature-rich web application built using React. It enables users to create, edit, and manage notes, as well as create tags to categorize the notes. The application also provides a Notes List page, where users can search notes by name and filter them based on tags.
+            
+            What I learned from the project:
+
+            React: Building the application with React involves breaking down the UI into reusable components and managing the component state effectively.
+
+            useEffect: The useEffect hook is used to perform side effects in functional components.
+
+            useMemo: The useMemo hook is used to memoize expensive calculations, preventing unnecessary re-computations in functional components.
+
+            Bootstrap: Bootstrap is used for styling the user interface, providing responsive and visually appealing designs without having to write custom CSS from scratch.
+
+            State Management: Handling state within the application is crucial for managing the notes, tags, and search functionalities. State management concepts like useState and context API might be used to manage the state effectively.
+
+            Routing: To navigate between different pages or views, a routing library like React Router might be used.
+
+            Form Handling: Implementing form handling techniques to gather user input for creating or editing notes.`,
         tags: [
             {
-                name: "react",
+                name: "React",
                 color: "blue-text-gradient",
             },
         ],
@@ -192,18 +212,44 @@ const projects = [
     {
         name: "Movie Database",
         description:
-            "A movie database application making use of TMDB API to show movies and tv series. You can filter, search different movies and tv series. View the details of both including trailers, episode details (series) and cast details.",
+            `Movie DB is a comprehensive and user-friendly application that allows users to explore a vast collection of movies and TV series. Powered by the TMDB API, the app provides an immersive experience to discover, rate, and save your favorite movies and TV shows.
+
+            Key Features:
+
+            Extensive Movie and TV Series Database: Stay up to date with the latest releases and discover new content across various genres.
+
+            Watchlist: Create your personalized watchlist by adding movies and TV shows you wish to watch in the future. Keep track of your favorite content and easily access them whenever you want.
+
+            Ratings: Help other users make informed decisions and contribute to the community by providing valuable feedback.
+
+            Search and Filter Options: Refine your results with advanced filters, such as genre, release year, language, and more.
+
+            Detailed Information: Get comprehensive details about movies and TV shows, including synopsis, cast and crew information, ratings, runtime, and trailers.
+
+            User-Friendly Interface: Enjoy a clean and intuitive user interface designed for seamless navigation and enhanced user experience. Easily browse through categories, access your watchlist, and manage your profile.
+            
+            What I learned from the project:
+            
+            React Native: Learned how to create a mobile app that runs on both iOS and Android devices with a single codebase, reducing development time and effort.
+
+            Redux: Learned how to implement Redux, a state management library, in your React Native app.
+
+            Bottom Tab Navigation: Explored and implemented bottom tab navigation in your app.
+
+            Deploying to Firebase: Learned how to deploy your app to Firebase, a cloud-based platform that offers various services such as hosting, real-time database, authentication, and more.
+
+            App Store Submission: Deployed your app to the App Store, you gained hands-on experience with the process of submitting an app to Apple for review and distribution.`,
         tags: [
             {
-                name: "reactnative",
+                name: "Reactnative",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "Restapi",
                 color: "green-text-gradient",
             },
             {
-                name: "android",
+                name: "Android",
                 color: "orange-text-gradient",
             },
             {
@@ -217,22 +263,40 @@ const projects = [
     {
         name: "Expense Tracker",
         description:
-            "An fullstack expense tracker application making use of serverless AWS services such as Lambda, RDS and API Gateway. Enables you to log your expenses based on categories and view a summary of your expenses in the form of a pie graph.",
+            `The full-stack expense tracker application is a comprehensive project that allows users to manage their expenses efficiently. The application offers two primary functionalities: the ability to add expenses and the capability to generate expense summaries based on categories. The backend is built as a serverless application, utilizing AWS Lambda, RDS (Relational Database Service), and API Gateway to handle the application's data and logic.
+            
+            What I learned from the project:
+
+            Nodejs:
+            Nodejs was used to build the BE side of the project. Helped me to further enhance my knowledge to a full stack developer.
+
+            AWS Lambda:
+            AWS Lambda is a serverless compute service that enables developers to run code without managing servers. In the context of this project, AWS Lambda functions were used to handle various backend tasks, such as processing expense data, validating input, and calculating summaries. Developers learned how to deploy functions, set up triggers, and interact with other AWS services.
+
+            RDS (Relational Database Service):
+            AWS RDS simplifies the process of setting up, operating, and scaling relational databases in the cloud. In the expense tracker application, RDS was utilized to store and manage expense data in a relational database. This involved creating tables, defining schemas, and performing CRUD operations on the database.
+
+            API Gateway:
+            AWS API Gateway acts as a frontend to the serverless backend, providing a secure and scalable API endpoint for the frontend to interact with the backend services. Developers learned how to set up API endpoints, handle authentication and authorization, and integrate API Gateway with Lambda functions and RDS to facilitate smooth communication between the frontend and backend.
+
+            Full-stack Development:
+            By working on this project, developers gained experience in building a full-stack application from scratch. They learned how to integrate the frontend (built with React Native) with the backend (AWS Lambda, RDS, and API Gateway) to create a seamless user experience.
+            `,
         tags: [
             {
-                name: "reactnative",
+                name: "Reactnative",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "Restapi",
                 color: "green-text-gradient",
             },
             {
-                name: "aws",
+                name: "Aws",
                 color: "orange-text-gradient",
             },
             {
-                name: "nodejs",
+                name: "Nodejs",
                 color: "pink-text-gradient",
             },
         ],
@@ -242,10 +306,18 @@ const projects = [
     {
         name: "QR Code Scanner",
         description:
-            "A QR code scanner application which lets you scan QR code and view the result.",
+            `The project is a QR code scanner built using the react-native-vision-camera library in a React Native application. The app allows users to use their device's camera to scan QR codes and then view the details encoded within the QR code.
+
+            What I learned from the project:
+
+            QR Code Scanning in React Native: I gained hands-on experience with integrating the react-native-vision-camera library to enable QR code scanning within a React Native application.
+
+            Camera Access and Permissions: I learned how to request camera access permissions from the user and how to work with the device's camera for capturing video frames.
+
+            QR Code Recognition: I discovered how to use the QR code recognition capabilities of react-native-vision-camera to detect and decode QR codes from the captured video frames.`,
         tags: [
             {
-                name: "reactnative",
+                name: "Reactnative",
                 color: "blue-text-gradient",
             },
         ],
