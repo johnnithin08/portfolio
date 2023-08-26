@@ -259,6 +259,7 @@ const projects = [
         ],
         image: movieDatabase,
         source_code_link: "https://github.com/johnnithin08/tmdb-project",
+        live_link: "https://play.google.com/store/apps/details?id=com.moviedatabase",
     },
     {
         name: "Expense Tracker",

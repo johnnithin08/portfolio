@@ -1,4 +1,3 @@
-import React from 'react'
 import { Navbar, Hero, About, Experience, Tech, Works, Contact } from '../components'
 import { StarsCanvas } from '../components/canvas/StarsCanvas'
 

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputerCanvas } from "./canvas";
 import { useEffect, useState } from "react";
 
 export const Hero = () => {
