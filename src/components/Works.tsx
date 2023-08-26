@@ -33,7 +33,6 @@ const WorksComponent = () => {
     tags,
     image,
     source_code_link,
-    live_link,
   }: ProjectCardProps) => {
     const navigate = useNavigate()
 
