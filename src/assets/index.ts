@@ -27,18 +27,20 @@ import ios from "./tech/ios.png"
 
 import regov from "./company/Regov_logo.png"
 import kba from "./company/kba_logo.png"
+import neuven from "./company/neuven_logo.jpeg"
 
 import hoobank from "./react-tailwind.png"
 import advancedNotes from "./advanced-notes.png"
 import movieDatabase from "./movie-database.jpeg"
+import taxiBudget from "./taxi-budget.png"
+import chatOn from "./chat-on.png"
 
 export {
+  advancedNotes,
   android,
   aws,
   backend,
-  hoobank,
-  advancedNotes,
-  movieDatabase,
+  chatOn,
   close,
   creator,
   css,
@@ -46,6 +48,7 @@ export {
   figma,
   git,
   github,
+  hoobank,
   html,
   ios,
   javascript,
@@ -55,11 +58,14 @@ export {
   menu,
   mobile,
   mongodb,
+  movieDatabase,
+  neuven,
   nodejs,
   reactjs,
   redux,
   regov,
   tailwind,
+  taxiBudget,
   threejs,
   typescript,
   web,
