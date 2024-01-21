@@ -18,6 +18,9 @@ import {
     hoobank,
     advancedNotes,
     movieDatabase,
+    chatOn,
+    taxiBudget,
+    neuven,
 } from "../assets";
 
 export const navLinks = [
@@ -99,13 +102,15 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React Native Developer (Freelance)",
-        company_name: "Regov Technologies",
-        icon: regov,
+        title: "Software Developer",
+        company_name: "Neuven Solutions",
+        icon: neuven,
         iconBg: "#E6DEDD",
-        date: "May 2023 - Present",
+        date: "Sep 2023 - Present",
         points: [
-            "Collaborated with clients remotely, leveraging effective communication and project management tools to facilitate seamless collaboration, resulting in a 20% increase in client satisfaction and a 15% reduction in project scope misunderstandings.",
+            "Refactored and ensured the website's mobile responsiveness by skillfully applying media queries and Bootstrap classes, enhancing user experience across various devices and screen sizes.",
+            "Implemented comprehensive end-to-end testing using Cypress, enhancing the application's reliability and robustness, and reducing the occurrence of critical bugs.",
+            "Conducted thorough market research and performed competitor analysis on locum applications, providing valuable insights and data-driven recommendations to inform strategic decision-making and product development.",
         ],
     },
     {
@@ -113,7 +118,7 @@ const experiences = [
         company_name: "Regov Technologies",
         icon: regov,
         iconBg: "#E6DEDD",
-        date: "Feb 2020 - Apr 2023",
+        date: "Feb 2020 - Aug 2023",
         points: [
             "Collaborated on an asset management project for Malaysia's largest investment bank, contributing to the project's successful execution and providing valuable insights and solutions.",
             "Enhanced application process flows by 10-15%, optimizing efficiency and productivity.",
@@ -151,6 +156,126 @@ const experiences = [
 ];
 
 const projects = [
+    {
+        name: "Taxi Budget",
+        description:
+            `Taxi Budget is a dedicated mobile application designed exclusively for taxi drivers, providing a streamlined solution for efficient income and expense management. The app comes equipped with a user-friendly interface and powerful features tailored to meet the unique financial needs of taxi professionals.
+            
+            What I learned from the project:
+
+            AWS Amplify Admin: Through this project, I gained valuable experience using AWS Amplify Admin to create a full-stack application. AWS Amplify Admin simplifies and accelerates the development process by providing a set of tools and services for building scalable and secure cloud-powered applications.
+
+            GraphQL API Generation: I learned how to utilize AWS Amplify Admin to easily generate a GraphQL API for the application. GraphQL is a powerful query language for APIs that enables efficient data retrieval and manipulation. Amplify's automated API generation capabilities significantly reduced the effort required to set up the backend of the application.
+
+            React Native Gifted Charts: In this project, I integrated React Native Gifted Charts to create interactive and visually appealing graphs and charts. These charts not only enhanced the user interface but also provided valuable insights into the financial data being managed by taxi drivers. This experience allowed me to improve my skills in integrating third-party libraries and creating engaging data visualizations within a React Native app.
+            `,
+        tags: [
+            {
+                name: "Reactnative",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Aws",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "graphql",
+                color: "green-text-gradient",
+            },
+            {
+                name: "charts",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: taxiBudget,
+        source_code_link: "https://github.com/johnnithin08/cab-expense",
+        live_link: "https://play.google.com/store/apps/details?id=com.cabexpense",
+    },
+    {
+        name: "Chat On",
+        description:
+            `Chat On revolutionizes communication with its user-friendly interface, allowing seamless one-on-one chats and dynamic group discussions. Connect with ease, share thoughts, and collaborate effortlessly in real-time.
+
+            Enhanced with versatile features, Chat On supports file attachments, ensuring a comprehensive and interactive messaging experience. Stay connected and share your world effortlessly with Chat On.
+            
+            What I learned from the project:
+
+            React Native Image Picker and React Native Video: During the development of "Chat On," I acquired proficiency in integrating and utilizing the React Native Image Picker and React Native Video libraries. These tools enabled the application to support image and video uploads, as well as seamless playback of video content. This enhanced the user experience by allowing users to share multimedia content within the chat platform.
+
+            React Native Contacts: I implemented the React Native Contacts library to access the user's mobile contacts and filter them within the application. This feature streamlined the user experience by facilitating communication exclusively with contacts who are also using the "Chat On" app. It improved the efficiency of connecting with known contacts and fostering meaningful conversations.
+
+            GraphQL Subscriptions: "Chat On" leveraged GraphQL subscriptions to achieve real-time data updates. This technology allowed users to receive instant notifications of new messages and updates within the chat platform. By implementing GraphQL subscriptions, I gained valuable insights into building responsive and real-time communication features, which are essential in modern messaging applications.
+            `,
+        tags: [
+            {
+                name: "Reactnative",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Aws",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "graphql",
+                color: "green-text-gradient",
+            },
+        ],
+        image: chatOn,
+        source_code_link: "https://github.com/johnnithin08/react-native-chat-app",
+        live_link: "https://play.google.com/store/apps/details?id=com.chatonnithin",
+    },
+    {
+        name: "Movie Database",
+        description:
+            `Movie DB is a comprehensive and user-friendly application that allows users to explore a vast collection of movies and TV series. Powered by the TMDB API, the app provides an immersive experience to discover, rate, and save your favorite movies and TV shows.
+
+            Key Features:
+
+            Extensive Movie and TV Series Database: Stay up to date with the latest releases and discover new content across various genres.
+
+            Watchlist: Create your personalized watchlist by adding movies and TV shows you wish to watch in the future. Keep track of your favorite content and easily access them whenever you want.
+
+            Ratings: Help other users make informed decisions and contribute to the community by providing valuable feedback.
+
+            Search and Filter Options: Refine your results with advanced filters, such as genre, release year, language, and more.
+
+            Detailed Information: Get comprehensive details about movies and TV shows, including synopsis, cast and crew information, ratings, runtime, and trailers.
+
+            User-Friendly Interface: Enjoy a clean and intuitive user interface designed for seamless navigation and enhanced user experience. Easily browse through categories, access your watchlist, and manage your profile.
+            
+            What I learned from the project:
+            
+            React Native: Learned how to create a mobile app that runs on both iOS and Android devices with a single codebase, reducing development time and effort.
+
+            Redux: Learned how to implement Redux, a state management library, in your React Native app.
+
+            Bottom Tab Navigation: Explored and implemented bottom tab navigation in your app.
+
+            Deploying to Firebase: Learned how to deploy your app to Firebase, a cloud-based platform that offers various services such as hosting, real-time database, authentication, and more.
+
+            App Store Submission: Deployed your app to the App Store, you gained hands-on experience with the process of submitting an app to Apple for review and distribution.`,
+        tags: [
+            {
+                name: "Reactnative",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Restapi",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Android",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "ios",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: movieDatabase,
+        source_code_link: "https://github.com/johnnithin08/tmdb-project",
+        live_link: "https://play.google.com/store/apps/details?id=com.moviedatabase",
+    },
     {
         name: "Responsive Web",
         description:
@@ -208,58 +333,6 @@ const projects = [
         image: advancedNotes,
         source_code_link: "https://github.com/johnnithin08/advanced-notes",
         live_link: "https://notes.nithindev.com/",
-    },
-    {
-        name: "Movie Database",
-        description:
-            `Movie DB is a comprehensive and user-friendly application that allows users to explore a vast collection of movies and TV series. Powered by the TMDB API, the app provides an immersive experience to discover, rate, and save your favorite movies and TV shows.
-
-            Key Features:
-
-            Extensive Movie and TV Series Database: Stay up to date with the latest releases and discover new content across various genres.
-
-            Watchlist: Create your personalized watchlist by adding movies and TV shows you wish to watch in the future. Keep track of your favorite content and easily access them whenever you want.
-
-            Ratings: Help other users make informed decisions and contribute to the community by providing valuable feedback.
-
-            Search and Filter Options: Refine your results with advanced filters, such as genre, release year, language, and more.
-
-            Detailed Information: Get comprehensive details about movies and TV shows, including synopsis, cast and crew information, ratings, runtime, and trailers.
-
-            User-Friendly Interface: Enjoy a clean and intuitive user interface designed for seamless navigation and enhanced user experience. Easily browse through categories, access your watchlist, and manage your profile.
-            
-            What I learned from the project:
-            
-            React Native: Learned how to create a mobile app that runs on both iOS and Android devices with a single codebase, reducing development time and effort.
-
-            Redux: Learned how to implement Redux, a state management library, in your React Native app.
-
-            Bottom Tab Navigation: Explored and implemented bottom tab navigation in your app.
-
-            Deploying to Firebase: Learned how to deploy your app to Firebase, a cloud-based platform that offers various services such as hosting, real-time database, authentication, and more.
-
-            App Store Submission: Deployed your app to the App Store, you gained hands-on experience with the process of submitting an app to Apple for review and distribution.`,
-        tags: [
-            {
-                name: "Reactnative",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Android",
-                color: "orange-text-gradient",
-            },
-            {
-                name: "ios",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: movieDatabase,
-        source_code_link: "https://github.com/johnnithin08/tmdb-project",
-        live_link: "https://play.google.com/store/apps/details?id=com.moviedatabase",
     },
     {
         name: "Expense Tracker",
