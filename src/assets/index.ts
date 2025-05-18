@@ -4,7 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-import linkedin from "./linkedin.webp"
+import linkedin from "./linkedin.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -21,52 +21,54 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import aws from "./tech/aws.png"
-import android from "./tech/android.png"
-import ios from "./tech/ios.png"
+import aws from "./tech/aws.png";
+import android from "./tech/android.png";
+import ios from "./tech/ios.png";
 
-import regov from "./company/Regov_logo.png"
-import kba from "./company/kba_logo.png"
-import neuven from "./company/neuven_logo.jpeg"
+import regov from "./company/Regov_logo.png";
+import kba from "./company/kba_logo.png";
+import neuven from "./company/neuven_logo.jpeg";
 
-import hoobank from "./react-tailwind.png"
-import advancedNotes from "./advanced-notes.png"
-import movieDatabase from "./movie-database.jpeg"
-import taxiBudget from "./taxi-budget.png"
-import chatOn from "./chat-on.png"
+import hoobank from "./react-tailwind.png";
+import advancedNotes from "./advanced-notes.png";
+import movieDatabase from "./movie-database.jpeg";
+import taxiBudget from "./taxi-budget.png";
+import chatOn from "./chat-on.png";
+import reactMovie from "./react-movie.png";
 
 export {
-  advancedNotes,
-  android,
-  aws,
-  backend,
-  chatOn,
-  close,
-  creator,
-  css,
-  docker,
-  figma,
-  git,
-  github,
-  hoobank,
-  html,
-  ios,
-  javascript,
-  kba,
-  linkedin,
-  logo,
-  menu,
-  mobile,
-  mongodb,
-  movieDatabase,
-  neuven,
-  nodejs,
-  reactjs,
-  redux,
-  regov,
-  tailwind,
-  taxiBudget,
-  threejs,
-  typescript,
-  web,
+	advancedNotes,
+	android,
+	aws,
+	backend,
+	chatOn,
+	close,
+	creator,
+	css,
+	docker,
+	figma,
+	git,
+	github,
+	hoobank,
+	html,
+	ios,
+	javascript,
+	kba,
+	linkedin,
+	logo,
+	menu,
+	mobile,
+	mongodb,
+	movieDatabase,
+	neuven,
+	nodejs,
+	reactjs,
+	reactMovie,
+	redux,
+	regov,
+	tailwind,
+	taxiBudget,
+	threejs,
+	typescript,
+	web,
 };
