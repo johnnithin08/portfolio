@@ -109,9 +109,12 @@ const experiences = [
 		iconBg: "#E6DEDD",
 		date: "Sep 2023 - Present",
 		points: [
-			"Refactored and ensured the website's mobile responsiveness by skillfully applying media queries and Bootstrap classes, enhancing user experience across various devices and screen sizes.",
-			"Implemented comprehensive end-to-end testing using Cypress, enhancing the application's reliability and robustness, and reducing the occurrence of critical bugs.",
-			"Conducted thorough market research and performed competitor analysis on locum applications, providing valuable insights and data-driven recommendations to inform strategic decision-making and product development.",
+			"Engineered a robust and scalable mobile app using React Native and Expo, delivering clean architecture and high accessibility standards.",
+			"Leveraged EAS for seamless deployments and over-the-air (OTA) updates, ensuring successful cross-platform deployment to both Android and iOS app stores.",
+			"Seamlessly integrated TanStackQuery, Sentry, and Firebase to drive efficient data fetching, proactive error tracking, and real-time analytics, directly supporting strategic goals around user acquisition and engagement.",
+			"Implemented and maintained automated testing frameworks with Jest and Detox, significantly elevating code quality and enabling frictionless deployments through strong cross-functional collaboration.",
+			"Crafted performant backend endpoints and orchestrated database updates using .NET C# and SQL, ensuring robust RESTful API communication across web and mobile platforms.",
+			"Refactored and optimized website responsiveness using media queries and Bootstrap, resulting in enhanced accessibility, cross-device consistency, and improved stakeholder satisfaction in a fast-paced Agile environment.",
 		],
 	},
 	{
@@ -159,11 +162,9 @@ const experiences = [
 const projects = [
 	{
 		name: "Movie Website",
-		description: `In this project, I've built a modern movie web app using React 19 and Vite, integrating with the TMDB API for movie data. You implemented efficient routing and data fetching using advanced third-party libraries.
+		description: `In this project, I've built a modern movie web app using Nextjs and React 19, integrating with the TMDB API for movie data. You implemented efficient routing and data fetching using advanced third-party libraries.
 
             Third-party tools used:
-
-            TanStack Router: for powerful, declarative routing.
 
             TanStack Query: for fetching and caching TMDB API data.
 
@@ -171,12 +172,16 @@ const projects = [
 
             React 19: with the latest features and optimizations.
 
-            Vite: for fast development and build tooling.
+            Nextjs: File based routing and FE framework.
             `,
 		tags: [
 			{
 				name: "React",
 				color: "blue-text-gradient",
+			},
+			{
+				name: "Nextjs",
+				color: "pink-text-gradient",
 			},
 			{
 				name: "Tailwind",
