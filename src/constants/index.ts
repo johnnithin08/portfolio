@@ -189,7 +189,7 @@ const projects = [
 		],
 		image: reactMovie,
 		source_code_link: "https://github.com/johnnithin08/react-movie-app",
-		live_link: "https://movies.nithindev.com/",
+		live_link: "https://main.d3qxua5izfiq6j.amplifyapp.com/",
 	},
 	{
 		name: "Taxi Budget",
